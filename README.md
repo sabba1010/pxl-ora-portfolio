@@ -106,7 +106,7 @@ A huge shoutout to [Naresh Khatri](https://github.com/Naresh-Khatri/Portfolio) f
 Feel free to reach out to me for collaboration, feedback, or just to say hi! 😊
 
 - **Email:** abhijitzende75@gmail.com
-- **LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/zende-abhijit/)
+- **LinkedIn:** [Your LinkedIn Profile](linkedin.com/company/pixelorastudio/)
 
 ---
 

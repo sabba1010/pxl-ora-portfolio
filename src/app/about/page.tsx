@@ -55,7 +55,7 @@ const CONTACT_LINKS = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/zende-abhijit/",
+    href: "linkedin.com/company/pixelorastudio/",
     content: "/zende-abhijit",
     icon: <FaLinkedin height={"50px"} />,
   },

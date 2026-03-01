@@ -1,5 +1,5 @@
 const config = {
-  title: "Abhijit Zende | AI Enthusiast",
+  title: "pixelora studio | AI Enthusiast",
   description: {
     long: "Explore the portfolio of Abhijit, a Computer Science Engineer with 1.5 year experience in Devlopment, DevOps & Database management with hands-on experience in deploying & automating workflows, & collaborating with foreign clients. Strong analytical skills, effective communication, and a team-oriented approach to driving process improvements and delivering results.",
     short:
@@ -7,10 +7,10 @@ const config = {
   },
   keywords: [
     "Abhijit",
-    "Abhijit Zende",
+    "pixelora studio",
     "abhijitzende",
     "abhijitzende.com",
-    "Abhijit Zende portfolio",
+    "pixelora studio portfolio",
     "portfolio",
     "DevOps",
     "Devlopment",
@@ -30,7 +30,7 @@ const config = {
     "AIOps",
     "Azure",
   ],
-  author: "Abhijit Zende",
+  author: "pixelora studio",
   email: "abhijitzende75@gmail.com",
   site: "https://abhijitzende.com",
 
@@ -39,7 +39,7 @@ const config = {
   },
   social: {
     twitter: "https://x.com/_Abhi_Speaks/",
-    linkedin: "https://www.linkedin.com/in/zende-abhijit/",
+    linkedin: "linkedin.com/company/pixelorastudio/",
     instagram: "https://www.instagram.com/_.celestial_abhi._/",
     facebook: "https://www.facebook.com/profile.php?id=100010029821759",
     github: "https://github.com/Abhiz2411/",
