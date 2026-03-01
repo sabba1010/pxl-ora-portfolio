@@ -137,3 +137,22 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+
+// "use client";
+
+// import dynamic from "next/dynamic";
+
+// const Spline = dynamic(() => import("@splinetool/react-spline"), {
+//   ssr: false,
+// });
+
+// const Hero = () => {
+//   return (
+//     <section className="w-full h-screen bg-black overflow-hidden">
+//       <Spline scene="https://prod.spline.design/onljshPZxNEk41nR/scene.splinecode" />
+//     </section>
+//   );
+// };
+
+// export default Hero;
