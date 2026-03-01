@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { File, Github, Linkedin } from "lucide-react";
+import { File, Linkedin, Facebook } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -11,7 +11,7 @@ import {
 import { usePreloader } from "../preloader";
 import { BlurIn, BoxReveal } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiFacebook, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
 
 const HeroSection = () => {
@@ -38,7 +38,7 @@ const HeroSection = () => {
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    Hi, I am
+                    Welcome to
                     <br className="md:hidden" />
                   </p>
                 </BlurIn>
@@ -47,53 +47,48 @@ const HeroSection = () => {
                     <TooltipTrigger asChild>
                       <h1
                         className={cn(
-                          "font-thin text-6xl text-transparent text-slate-800 ml-1 text-left",
+                          "font-thin text-6xl text-transparent text-slate-800 ml-1 text-left uppercase tracking-tighter",
                           "cursor-default text-edge-outline font-display sm:text-7xl md:text-9xl "
                         )}
                       >
                         {config.author.split(" ")[0]}
                         <br className="md:block hiidden" />
                         {config.author.split(" ")[1]}
-                        {/* PLEASE hello??
-
-                        <br className="md:block hiidden" />
-                        UNMUTE ME 😢😢 */}
                       </h1>
                     </TooltipTrigger>
                     <TooltipContent
                       side="top"
                       className="dark:bg-white dark:text-black"
                     >
-                      theres something waiting for you in devtools
+                      Your digital future starts here.
                     </TooltipContent>
                   </Tooltip>
                 </BlurIn>
-                {/* <div className="md:block hidden bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 w-screen h-px animate-fade-right animate-glow" /> */}
                 <BlurIn delay={1.2}>
                   <p
                     className={cn(
-                      "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400 ml-3",
+                      "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400 ml-3 uppercase tracking-widest",
                       "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap bg-clip-text "
                     )}
                   >
-                    AI Enthusiast
+                    Creative Digital Agency
                   </p>
                 </BlurIn>
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1vjtWfqYGMIMK_rlBnmDEpKco9MiEaQss/view"
+                    "https://www.facebook.com/PixeloraOfficial/"
                   }
                   target="_blank"
                   className="flex-1"
                 >
-                  <BoxReveal delay={2} width="100%" >
-                    <Button className="flex items-center gap-2 w-full">
-                      <File size={24} />
-                      <p>Resume</p>
+                  {/* <BoxReveal delay={2} width="100%" >
+                    <Button className="flex items-center gap-2 w-full uppercase tracking-wider">
+                      <Facebook size={24} />
+                      <p>View Our Agency</p>
                     </Button>
-                  </BoxReveal>
+                  </BoxReveal> */}
                 </Link>
                 <div className="md:self-start flex gap-3">
                   <Tooltip delayDuration={300}>
@@ -101,22 +96,22 @@ const HeroSection = () => {
                       <Link href={"#contact"}>
                         <Button
                           variant={"outline"}
-                          className="block w-full overflow-hidden"
+                          className="block w-full overflow-hidden uppercase tracking-wider"
                         >
-                          Hire Me
+                          Work With Us
                         </Button>
                       </Link>
                     </TooltipTrigger>
                     <TooltipContent side="bottom">
-                      <p>pls 🥹 🙏</p>
+                      <p>Let&apos;s build something great! 🚀</p>
                     </TooltipContent>
                   </Tooltip>
                   <Link
-                    href={config.social.github}
+                    href={config.social.facebook}
                     target="_blank"
                   >
                     <Button variant={"outline"}>
-                      <SiGithub size={24} />
+                      <SiFacebook size={24} />
                     </Button>
                   </Link>
                   <Link

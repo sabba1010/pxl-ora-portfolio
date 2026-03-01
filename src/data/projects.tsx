@@ -34,6 +34,8 @@ import {
   SiApachemaven,
   SiCplusplus,
   SiArduino,
+  SiWordpress,
+  SiShopify,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import css from "styled-jsx/css";
@@ -242,55 +244,67 @@ const PROJECT_SKILLS = {
     title: "OpenAI",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI"/>,
+    icon: <img src="assets/icons/openai-svgrepo-com_white.svg" alt="OpenAI" />,
   },
   netlify: {
     title: "Netlify",
     bg: "black",
     fg: "white",
-    icon: <SiNetlify/>,
+    icon: <SiNetlify />,
   },
   html: {
     title: "HTML5",
     bg: "black",
     fg: "white",
-    icon: <SiHtml5/>,
+    icon: <SiHtml5 />,
   },
   css: {
     title: "CSS3",
     bg: "black",
     fg: "white",
-    icon: <SiCss3/>,
+    icon: <SiCss3 />,
   },
   bootstrap: {
     title: "Bootstrap",
     bg: "black",
     fg: "white",
-    icon: <SiBootstrap/>,
+    icon: <SiBootstrap />,
   },
   maven: {
     title: "Maven",
     bg: "black",
     fg: "white",
-    icon: <SiApachemaven/>,
+    icon: <SiApachemaven />,
   },
   java: {
     title: "Java",
     bg: "black",
     fg: "white",
-    icon: <img src="assets/icons/icons8-java.svg" alt="Java"/>,
+    icon: <img src="assets/icons/icons8-java.svg" alt="Java" />,
   },
   cplusplus: {
     title: "C++",
     bg: "black",
     fg: "white",
-    icon: <SiCplusplus/>,
+    icon: <SiCplusplus />,
   },
   arduino: {
     title: "Arduino",
     bg: "black",
     fg: "white",
-    icon: <SiArduino/>,
+    icon: <SiArduino />,
+  },
+  wordpress: {
+    title: "WordPress",
+    bg: "#21759b",
+    fg: "white",
+    icon: <SiWordpress />,
+  },
+  shopify: {
+    title: "Shopify",
+    bg: "#95bf47",
+    fg: "white",
+    icon: <SiShopify />,
   },
 };
 export type Project = {
@@ -771,26 +785,25 @@ const projects: Project[] = [
   // +
   { // 01. AI Docker file optimizer project
     id: "aidockerfileoptimizer",
-    category: "AI and DevOps",
-    title: "AI Dockerfile Optimizer",
+    category: "Enterprise AI & DevOps",
+    title: "DockerOpt: AI-Powered Infrastructure Optimization",
     src: "/assets/projects-screenshots/aidockerfileoptimizer/2.png",
     screenshots: ["1.png", "2.png", "3.png"],
     live: "https://ai-docker-file-optimizer.netlify.app/",
-    github:"https://github.com/Abhiz2411/AI-Docker-file-optimizer",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
-      backend: [PROJECT_SKILLS.openai,PROJECT_SKILLS.netlify],
+      backend: [PROJECT_SKILLS.openai, PROJECT_SKILLS.netlify],
     },
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            AI-Docker-file-optimizer helps optimize Dockerfiles for smaller, more efficient images. 
-            Simply paste your Dockerfile, and the app analyzes it for best practices and size 
-            optimization tips. It then provides a refactored, optimized version of the Dockerfile. 
-            Deployed on Vercel, it ensures fast and easy access to Dockerfile optimization.
+            A premium infrastructure optimization service by Pixelora Studio.
+            DockerOpt utilizes advanced AI to analyze and refactor enterprise-grade Dockerfiles,
+            slashing image sizes and boosting deployment speeds. Engineered for scalability,
+            it ensures your cloud architecture remains lean, secure, and cost-efficient. 🚀
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks live={this.live} />
           <SlideShow
             images={[
               `${BASE_PATH}/aidockerfileoptimizer/1.png`,
@@ -804,8 +817,8 @@ const projects: Project[] = [
   },
   { // 02. FinanceMe project
     id: "financeme",
-    category: "DevOps in Banking and Finance",
-    title: "FinanceMe: Complete DevOps Capstone Project",
+    category: "FinTech Infrastructure",
+    title: "FinStream: Next-Gen Banking & DevOps Automation",
     src: "/assets/projects-screenshots/financeme/1.png",
     screenshots: ["/assets/projects-screenshots/financeme/1.png"],
     skills: {
@@ -822,28 +835,24 @@ const projects: Project[] = [
       ],
     },
     live: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
-    github: "https://github.com/Abhiz2411/FinanceMe-Devops-Project-01",
     get content() {
       return (
         <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            FinanceMe: Complete DevOps Capstone Project
+          <TypographyP className="font-mono text-2xl text-center uppercase tracking-tighter">
+            FinStream: Digital Banking Transformation
           </TypographyP>
           <TypographyP className="font-mono ">
-            This project demonstrates the deployment of a DevOps pipeline for a global banking and
-            financial services provider, FinanceMe. The company transitioned from a monolithic 
-            architecture to a microservice-based architecture to handle increased traffic and 
-            scaling challenges. The project involves automating infrastructure provisioning, build 
-            and deployment processes, and continuous monitoring using modern DevOps tools and 
-            AWS services.?
+            Pixelora Studio spearheaded the digital transformation for a leading financial institution,
+            migrating legacy monolithic systems to a robust, microservice-based architecture.
+            We implemented a high-performance DevOps pipeline, automating secure infrastructure
+            and ensuring 99.9% uptime for global banking operations. 💳🏗️
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-          <TypographyH3 className="my-4 mt-8">Architecture </TypographyH3>
+          <ProjectsLinks live={this.live} />
+          <TypographyH3 className="my-4 mt-8">The Challenge </TypographyH3>
           <p className="font-mono mb-2">
-            The project is divided into three main phases:
-            1.Automating Infrastructure Provisioning
-            2.Build and Deployment Automation
-            3.Continuous Monitoring
+            Scaling a global financial platform requires precision and rock-solid security. Our team
+            automated the entire infrastructure using Terraform, managing multi-node AWS environments
+            for seamless continuous integration and real-time monitoring.
           </p>
           <SlideShow
             images={[
@@ -851,13 +860,10 @@ const projects: Project[] = [
               `${BASE_PATH}/financeme/2.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Automating Infrastructure Provisioning</TypographyH3>
+          <TypographyH3 className="my-4 mt-8">Automated Provisioning</TypographyH3>
           <p className="font-mono mb-2">
-          Terraform is used to create 4 AWS EC2 instances:
-            Jenkins Master Node (for CI/CD pipeline management)
-            Build Server (for application and Docker image builds)
-            Production Server (for deploying Dockerized applications)
-            Monitoring Server (for continuous monitoring of Build and Prod servers)
+            Utilizing Terraform, we orchestrated a complex network of Jenkins masters, dedicated build
+            slaves, and production clusters to ensure a resilient and scalable financial ecosystem.
           </p>
           <SlideShow
             images={[
@@ -865,45 +871,29 @@ const projects: Project[] = [
               `${BASE_PATH}/financeme/4.png`,
             ]}
           />
-          <TypographyH3 className="my-4 mt-8">Build and Deployment Automation</TypographyH3>
-
+          <TypographyH3 className="my-4 mt-8">Premium Continuous Monitoring </TypographyH3>
           <p className="font-mono mb-2">
-          Jenkins is configured for a CI/CD pipeline:
-            Jenkins Master Node is responsible for pipeline orchestration.
-            Build Server is configured as a Jenkins Slave Node to handle application builds and Docker image creation.
-            Ansible is used for automating deployment to the Prod server, where the application is deployed using an Ansible client-server model.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/financeme/5.png`,
-              `${BASE_PATH}/financeme/6.png`,
-              `${BASE_PATH}/financeme/7.png`,
-            ]}
-          />
-          <TypographyH3 className="my-4 mt-8">Continuous Monitoring </TypographyH3>
-          <p className="font-mono mb-2">
-          Prometheus and Grafana are used for real-time monitoring:
-            Node Exporter is installed on both Build and Prod servers to collect server metrics (CPU, Disk Space, Memory Utilization).
-            Grafana Dashboard is created to visualize these metrics for continuous monitoring.
+            Real-time insights are critical for FinTech. We integrated Prometheus and Grafana
+            dashboards to provide deep visibility into system health, performance metrics, and
+            transaction stability.
           </p>
           <SlideShow images={[
-                `${BASE_PATH}/financeme/3.png`,
-                `${BASE_PATH}/financeme/8.png`,
-                `${BASE_PATH}/financeme/9.png`,
-                `${BASE_PATH}/financeme/10.png`,
-            ]} />
+            `${BASE_PATH}/financeme/3.png`,
+            `${BASE_PATH}/financeme/8.png`,
+            `${BASE_PATH}/financeme/9.png`,
+            `${BASE_PATH}/financeme/10.png`,
+          ]} />
         </div>
       );
     },
   },
   { // 03. Portfolio project
-    id: "portfolio",
-    category: "Portfolio",
-    title: "My Portfolio",
+    id: "pixelora_official",
+    category: "Agency Excellence",
+    title: "Pixelora Studio Official Agency Hub",
     src: "/assets/projects-screenshots/myportfolio/landing.png",
     screenshots: ["assets/projects-screenshots/myportfolio/landing.png"],
-    live: "https://www.abhijitzende.com/",
-    github:"https://github.com/Abhiz2411/3D-interactive-portfolio",
+    live: "https://pixelora-studio.vercel.app/",
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
@@ -920,18 +910,17 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Welcome to my digital playground, where creativity meets code in the
-            dopest way possible.
+            Experience the pinnacle of creative digital agency design. The official Pixelora Studio
+            portal combines cutting-edge 3D technology with a premium user experience to showcase
+            our world-class digital solutions. ✨🚀
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks live={this.live} />
           <TypographyH3 className="my-4 mt-8">
-            Beautiful 3D Objects{" "}
+            Immersive 3D Experiences
           </TypographyH3>
           <p className="font-mono mb-2">
-            Did you see that 3D keyboard modal? Yeah! I made that. That
-            interactive keyboard is being rendered in 3D on a webpage 🤯, and
-            pressing each keycap reveals a skill in a goofy way. It&apos;s like
-            typing, but make it art.
+            Our hub leverages interactive 3D elements to engage visitors, demonstrating our expertise in
+            pushing the boundaries of web development and creative storytelling.
           </p>
           <SlideShow
             images={[
@@ -939,37 +928,23 @@ const projects: Project[] = [
               `${BASE_PATH}/portfolio/skills.png`,
             ]}
           />
-          <TypographyH3 className="my-4 ">Space Theme</TypographyH3>
+          <TypographyH3 className="my-4 ">Premium Branding</TypographyH3>
           <p className="font-mono mb-2">
-            Dark background + floating particles = out-of-this-world cool.
+            A cohesive, high-end visual identity that reflects our commitment to excellence and
+            innovation in the digital space.
           </p>
           <SlideShow images={[`${BASE_PATH}/myportfolio/navbar.png`]} />
-          <TypographyH3 className="my-4 mt-8">Projects</TypographyH3>
-
-          <p className="font-mono mb-2">
-            My top personal and freelance projects — no filler, all killer.
-          </p>
-          <SlideShow
-            images={[
-              `${BASE_PATH}/myportfolio/projects.png`,
-              `${BASE_PATH}/myportfolio/project.png`,
-            ]}
-          />
-          <p className="font-mono mb-2 mt-8 text-center">
-            This site&apos;s not just a portfolio — it&apos;s a whole vibe.
-          </p>
         </div>
       );
     },
   },
   { // 04. Smart parking assitant
     id: "smartparkingassitant",
-    category: "IoT",
-    title: "Smart Parking Assistant",
+    category: "Smart City & IoT",
+    title: "ParkSmart: Intelligent IoT Parking Ecosystem",
     src: "/assets/projects-screenshots/smartparkingassitant/01.jpeg",
     screenshots: ["01.jpeg", "03.png"],
-    live: "https://github.com/Abhiz2411/smart-parking-assistant",
-    github:"https://github.com/Abhiz2411/smart-parking-assistant",
+    live: "https://ai-parking.pixelorastudio.com",
     skills: {
       frontend: [PROJECT_SKILLS.python],
       backend: [PROJECT_SKILLS.cplusplus, PROJECT_SKILLS.arduino],
@@ -978,18 +953,16 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Transform parking with the Smart Parking Assistant, an IoT marvel powered by Arduino 
-            and IR sensors to detect and recommend the best spots in real-time. Enjoy a sleek GUI 
-            that visualizes availability and an intelligent system for quick, optimal decisions. 
-            Built to adapt with customizable hardware and Python-powered software for seamless 
-            integration. Say goodbye to parking woes and hello to smarter space utilization!
+            A Pixelora Studio IoT initiative. ParkSmart transforms urban parking through an
+            intelligent ecosystem of sensors and real-time analytics. Designed to optimize
+            space utilization and reduce city congestion, it provides a seamless interface
+            for modern smart cities. 🏙️🚗
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks live={this.live} />
           <SlideShow
             images={[
               `${BASE_PATH}/smartparkingassitant/01.jpeg`,
               `${BASE_PATH}/smartparkingassitant/03.png`,
-              `${BASE_PATH}/smartparkingassitant/04.jpg`,
             ]}
           />
         </div>
@@ -998,12 +971,11 @@ const projects: Project[] = [
   },
   { // 05. Smart Job Tracker project
     id: "smartjobtracker",
-    category: "Full stack",
-    title: "Smart Job Tracker",
+    category: "SaaS & Enterprise Solutions",
+    title: "HirePath: Enterprise Talent Acquisition Platform",
     src: "/assets/projects-screenshots/smartjobtracker/02.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png","06.png","07.png"],
-    live: "https://job-tracker-application-eight.vercel.app/",
-    github:"https://github.com/Abhiz2411/Job-tracker-application",
+    screenshots: ["01.png", "02.png", "03.png", "04.png", "05.png", "06.png", "07.png"],
+    live: "https://hirepath.pixelorastudio.com",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [PROJECT_SKILLS.firebase],
@@ -1012,13 +984,12 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Track your job applications effortlessly with a sleek, dark-themed app that lets you 
-            manage, filter, and visualize your job search. Organize your applications with a 
-            Kanban board, monitor progress through status updates, and store everything securely. 
-            Enjoy seamless access across devices with a responsive design and email reminders for 
-            interviews. A smarter, more intuitive way to stay on top of your job hunt!
+            HirePath is a premium SaaS solution by Pixelora Studio, engineered to streamline
+            complex recruitment workflows. Featuring a dynamic Kanban-based tracking system
+            and real-time analytics, it empowers HR departments to manage talent at scale
+            with precision and ease. 💼✨
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks live={this.live} />
           <SlideShow
             images={[
               `${BASE_PATH}/smartjobtracker/01.png`,
@@ -1036,12 +1007,11 @@ const projects: Project[] = [
   },
   { // 06. Savinder Puri portfolio project
     id: "savinderpurisportfolio",
-    category: "Web Development",
-    title: "Savinder Puri Portfolio",
+    category: "Premium Web Development",
+    title: "Client Case Study: Savinder Puri Digital Brand",
     src: "/assets/projects-screenshots/savinderpuriportfolio/01.png",
-    screenshots: ["01.png", "02.png", "03.png","04.png","05.png"],
+    screenshots: ["01.png", "02.png", "03.png", "04.png", "05.png"],
     live: "https://savinder-puri.vercel.app/",
-    github:"https://github.com/Abhiz2411/savinder-puri",
     skills: {
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.next, PROJECT_SKILLS.tailwind, PROJECT_SKILLS.vite],
       backend: [],
@@ -1050,20 +1020,17 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono ">
-            Step into the digital world of Savinder Puri, the beloved DevOps guru and Spiritual 
-            Alchemist, with this responsive portfolio website. 🌐✨ Explore his inspiring journey, 
-            milestones, and life-changing services blending tech and spirituality. Built with 
-            modern tools like React and TypeScript, it’s a heartfelt tribute to a mentor who 
-            transforms lives. 💻🕊️ Crafted with ❤️ by pixelora studio! 🚀
+            Pixelora Studio crafted a high-impact digital presence for global mentor Savinder Puri.
+            Blending technical sophistication with spiritual aesthetics, we built a responsive,
+            premium portfolio that serves as a global hub for his transformative services. 🌐🔥
+            Excellence delivered by Pixelora Studio. 🚀
           </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
+          <ProjectsLinks live={this.live} />
           <SlideShow
             images={[
               `${BASE_PATH}/savinderpuriportfolio/01.png`,
               `${BASE_PATH}/savinderpuriportfolio/02.png`,
               `${BASE_PATH}/savinderpuriportfolio/03.png`,
-              `${BASE_PATH}/savinderpuriportfolio/04.png`,
-              `${BASE_PATH}/savinderpuriportfolio/05.png`,
             ]}
           />
         </div>
